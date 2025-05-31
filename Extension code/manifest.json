@@ -1,10 +1,10 @@
 {
-  "name": "Page URL Scanner (Prototype)",
-  "description": "Prototype UI \u2014 scans all URLs on the current page and summarizes them.",
+  "name": "Safe Surf",
+  "description": "Prototype scans all URLs on the current page",
   "version": "0.1",
   "manifest_version": 3,
   "action": {
-    "default_title": "URL Scanner",
+    "default_title": "Safe Surf",
     "default_popup": "popup.html"
   },
   "permissions": [
