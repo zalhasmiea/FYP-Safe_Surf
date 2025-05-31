@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  min-width: 280px;
+}
+h1 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+#scanBtn {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#results {
+  margin-top: 0.8rem;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.5rem;
+}
+.placeholder {
+  color: #888;
+}
