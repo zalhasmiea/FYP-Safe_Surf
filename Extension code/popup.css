@@ -1,32 +1,115 @@
 body {
-  font-family: Arial, sans-serif;
-  min-width: 280px;
-  margin: 0 0 0.5rem 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-width: 320px;
+  margin: 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
+
 h1 {
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
-#scanBtn {
-  padding: 0.3rem 0.8rem;
-  font-size: 0.9rem;
+
+#scanBtn, #viewReportBtn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #4f8cff 0%, #38b2ac 100%);
+  color: #fff;
   cursor: pointer;
+  margin: 0.3rem 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
 }
-#results {
-  margin-top: 0.8rem;
-  max-height: 300px;
-  overflow-y: auto;
-  border-top: 1px solid #e0e0e0;
-  padding-top: 0.5rem;
+#scanBtn:hover, #viewReportBtn:hover {
+  background: linear-gradient(90deg, #38b2ac 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.03);
 }
+
 .placeholder {
-  color: #888;
+  color: #a0aec0;
+  font-style: italic;
+  margin-top: 1rem;
 }
+
 img {
-  width: 250px;
-  height: 100px;
+  width: 220px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+#summary {
+  background: linear-gradient(90deg, #e0f7fa 0%, #e6f0ff 100%);
+  border-radius: 0;
+  padding: 2rem 1.5rem;      /* Increased padding for more space */
+  margin-bottom: 1.5rem;     /* Slightly more margin below */
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                 /* More gap between summary rows */
+}
+
+#summary div,
+#summary span {
+  font-size: 1.08rem;
+  color: #2563eb;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  background: rgba(56,178,172,0.07);
+  margin-bottom: 0.2rem;
+  transition: background 0.2s;
+}
+
+#summary strong {
+  color: #4f8cff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#topThreats span#threatList {
+  color: #e53e3e;
+  font-weight: 600;
+  background: rgba(229,62,62,0.08);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+}
+
+#totalUrls, #safeUrls, #maliciousUrls, #topThreats {
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+#results {
+  display: inline;
+  font-weight: bold;
+  color: #3182ce;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }

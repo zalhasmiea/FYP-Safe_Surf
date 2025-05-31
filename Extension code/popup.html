@@ -6,10 +6,14 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body class="p-4">
-  <img src="media\big logo.png" alt="Girl in a jacket">
-  <button id="scanBtn">Scan Page</button>
-  <section id="results">
-    <p class="placeholder">Press “Scan Page” to analyse URLs.</p>
+  <img src="media/big logo.png" alt="Safe Surf Logo">
+  <section id="summary">
+    <div id="totalUrls">Total URLs found: <p id="results"></p></div>
+    <div id="safeUrls">Safe: 0</div>
+    <div id="maliciousUrls">Malicious: 0</div>
+    <div id="topThreats">Top Threats: <span id="threatList">None</span></div>
+    <button id="viewReportBtn">View Report</button>
+    <button id="scanBtn">Rescan</button>
   </section>
   <script src="popup.js"></script>
 </body>
