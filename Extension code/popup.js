@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === "urlList") {
-      resultsEl.innerHTML =`<div><strong>Found ${message.urls.length} URLs:</strong></div>`;
+      resultsEl.innerHTML =`<div><strong>Found ${message.urls.length}</strong></div>`;
     }
   });
 });

@@ -35,19 +35,12 @@ h1 {
   background: linear-gradient(90deg, #38b2ac 0%, #4f8cff 100%);
   transform: translateY(-2px) scale(1.03);
 }
-
-.placeholder {
-  color: #a0aec0;
-  font-style: italic;
-  margin-top: 1rem;
-}
-
 img {
   width: 220px;
   height: 90px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 #summary {
@@ -69,7 +62,6 @@ img {
   letter-spacing: 0.5px;
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
-  background: rgba(56,178,172,0.07);
   margin-bottom: 0.2rem;
   transition: background 0.2s;
 }
@@ -95,7 +87,7 @@ img {
   gap: 0.5rem;
 }
 
-#totalUrls, #safeUrls, #maliciousUrls, #topThreats {
+#totalUrls, #safeUrls, #maliciousUrls {
   font-size: 1rem;
   color: #2d3748;
 }
