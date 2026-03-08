@@ -1,0 +1,112 @@
+/* Global Reset for better spacing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-width: 330px; /* Slightly wider to give buttons breathing room */
+  margin: 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px; /* Added space at bottom */
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+#scanBtn, #viewReportBtn, #dashboardBtn {
+  padding: 0.6rem 0.4rem; /* Adjusted to fit text nicely */
+  font-size: 0.85rem;     /* Slightly smaller text for 3 buttons */
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 2px;          /* Small gap between buttons */
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+  font-weight: 600;
+  flex: 1;                /* Equal width */
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Primary Action: Scan & Report */
+#scanBtn, #viewReportBtn {
+  background: linear-gradient(90deg, #4f8cff 0%, #38b2ac 100%);
+}
+
+/* Secondary Action: Manual Input (Darker) */
+#dashboardBtn {
+  background: linear-gradient(90deg, #2d3748 0%, #4a5568 100%);
+}
+
+#scanBtn:hover, #viewReportBtn:hover {
+  background: linear-gradient(90deg, #38b2ac 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#dashboardBtn:hover {
+  background: linear-gradient(90deg, #4a5568 0%, #2d3748 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+img {
+  width: 200px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.2rem 1rem 1rem 1rem; /* Adjusted top margin */
+}
+
+#summary {
+  background: linear-gradient(90deg, #e0f7fa 0%, #e6f0ff 100%);
+  border-radius: 8px;     /* Rounded corners look better */
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 90%;             /* Not full width, floats like a card */
+}
+
+#summary div {
+  font-size: 1rem;
+  color: #2563eb;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#totalUrls, #safeUrls, #maliciousUrls {
+  color: #2d3748;
+  font-weight: 700;
+}
+
+#results {
+  font-weight: 800;
+  color: #3182ce;
+  margin-bottom: 5px;
+}
+
+/* BUTTON ROW */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  width: 90%; /* Matches summary width */
+  margin-top: 0.5rem;
+}

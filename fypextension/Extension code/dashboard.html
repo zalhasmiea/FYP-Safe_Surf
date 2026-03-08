@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safe Surf Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>
+      <img src="media/big logo.png" alt="Safe Surf">
+    </h1>
+    
+    <p>Enter a URL below to check its safety using AI.</p>
+    
+    <input type="text" id="urlInput" placeholder="http://example.com/login">
+    <br>
+    <button id="checkBtn">Check URL</button>
+
+    <div id="result-area">
+      <h3>Analysis Result:</h3>
+      <div id="resultCard" class="card">
+        <h2 id="verdict">...</h2>
+        <div class="vote-box" id="breakdown"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

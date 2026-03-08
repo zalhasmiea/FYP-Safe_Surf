@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safe Surf</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <img src="media/big logo.png" alt="Safe Surf" style="width: 220px; height: 90px; object-fit: contain;">
+  
+  <div id="summary">
+    <div><strong>Safe:</strong> <span id="safeUrls">-</span></div>
+    <div><strong>Threats:</strong> <span id="maliciousUrls">-</span></div>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 10px;">
+    <span id="results">Ready to Scan</span>
+  </div>
+
+  <div class="button-row">
+    <button id="viewReportBtn">Report</button>
+    <button id="dashboardBtn">Manual Input</button>
+    <button id="scanBtn">Scan Page</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

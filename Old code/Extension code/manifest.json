@@ -1,0 +1,14 @@
+{
+  "name": "Safe Surf",
+  "description": "Prototype scans all URLs on the current page",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Safe Surf",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}

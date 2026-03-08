@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #2d3748;
+    margin-bottom: 20px;
+    display: flex;             /* Align logo and text side-by-side */
+    justify-content: center;   /* Center them horizontally */
+    align-items: center;       /* Center them vertically */
+    gap: 15px;                 /* Space between logo and text */
+}
+
+h1 img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;       /* Keeps logo aspect ratio correct */
+}
+
+/* --- INPUTS & BUTTONS --- */
+input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #4f8cff;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: #4f8cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* --- RESULTS AREA --- */
+#result-area {
+    margin-top: 30px;
+    text-align: left;
+    display: none;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ccc;
+}
+
+/* Status Colors */
+.safe {
+    border-left-color: green;
+    background: #e8f5e9;
+}
+
+.malware {
+    border-left-color: #c0392b;
+    background: #f9e79f;
+}
+
+.phishing {
+    border-left-color: #e67e22;
+    background: #fae5d3;
+}
+
+.defacement {
+    border-left-color: #d68910;
+    background: #fcf3cf;
+}
+
+.vote-box {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.5;
+}
