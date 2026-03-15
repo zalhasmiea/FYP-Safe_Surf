@@ -1,5 +1,10 @@
 # Phishing Detection Browser Extension
 
+## Download The Model
+
+Download eery file in the folder below including the bert folder except the main.py
+https://drive.google.com/drive/folders/18AVuGNmh53iAcQFwrtLdWTO4i2yppyAD?usp=sharing
+
 ## Installation Guide
 
 Follow the steps below to run the system.
